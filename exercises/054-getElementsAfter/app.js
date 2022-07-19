@@ -1,3 +1,4 @@
 function getElementsAfter(array, n) {
-  // your code here
+  return	array.slice(n + 1,array.length)
 }
+getElementsAfter(['a', 'b', 'c', 'd', 'e'], 2);//['d', 'e']

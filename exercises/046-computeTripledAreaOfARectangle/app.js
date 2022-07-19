@@ -1,3 +1,4 @@
 function computeTripledAreaOfARectangle(length, width) {
-  // your code here
+  return length*width*3;
 }
+computeTripledAreaOfARectangle(2,4) //24
