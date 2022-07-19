@@ -1,5 +1,6 @@
 function addToBack(arr, element) {
-  // your code here
+  let array = arr.push(element);
+  return arr
 }
 
 var output = addToBack([1, 2], 3);
