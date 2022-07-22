@@ -1,5 +1,5 @@
-function convertDoubleSpaceToSingle(str) {
-    // your code here
+const convertDoubleSpaceToSingle = (string) => {
+    let str = string.split("  ");
+     return str.join(" ")  
 }
-var output = convertDoubleSpaceToSingle("string  with  double  spaces");
-console.log(output); // --> "string with double spaces"
+convertDoubleSpaceToSingle("string  with  double  spaces");

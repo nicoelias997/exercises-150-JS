@@ -1,6 +1,15 @@
-function removeStringValues(obj) {
-    // your code here
-}
-
-removeStringValues(obj);
-console.log(obj); // { age: 20 }
+var obj = {
+    name: 'Sam',
+    age: 20
+  }
+  
+  const removeStringValues = obj =>{
+    for(let propiedad in obj){
+          if(typeof obj[propiedad] == 'string'){
+          delete obj[propiedad]
+        }
+    }
+    return obj
+  }
+  removeStringValues(obj)
+  
