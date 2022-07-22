@@ -4,5 +4,11 @@ var obj = {
     c: 'montana'
 }
 function removeNumbersLessThan(num, obj) {
-    // your code here
+for(let propiedad in obj){
+  if(obj[propiedad] < num){
+    delete obj[propiedad]
+  }
+  }
+  return obj
 }
+removeNumbersLessThan(3,obj)
