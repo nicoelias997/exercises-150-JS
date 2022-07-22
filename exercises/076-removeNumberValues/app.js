@@ -4,8 +4,11 @@ var obj = {
     c: 4
 };
 function removeNumberValues(obj) {
-    // your code here
+    for(let propiedad in obj){
+      if(typeof obj[propiedad] == "number"){
+        delete obj[propiedad]
+    }
 }
-
-removeNumberValues(obj);
-console.log(obj); // --> { b: 'remaining' }
+  return obj
+}
+removeNumberValues(obj)
