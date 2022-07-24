@@ -1,8 +1,16 @@
 var obj = {
-  key: [1, 2, 4]
+  key: [2, 1, 5,0,-1]
 };
-function getLargestElementAtProperty(obj, key) {
-    // your code here
+const getLargestElementAtProperty = (obj,key) => {
+  let array = [];
+  for(let propiedad in obj){
+    if(propiedad == key){
+      for(let i = 0; i < obj[key].length; i++){
+        array.push(obj[key][i])
+      }
+    }
+  }
+	return Math.max(...array)//Ya que el prototipo de array es 'object'
 }
 var output = getLargestElementAtProperty(obj, 'key');
-console.log(output); // --> 4
+console.log(output); // --> 5
