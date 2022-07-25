@@ -11,6 +11,21 @@ const getLongestElement = arr => {
     }
   }
 }
-
 var output = getLongestElement(['one', 'twooo', 'three', "holaa"]);
 console.log(output); // --> 'twooo'
+
+// const getLongestElement = arr => {
+//     var lgth = 0;
+//     var longest;
+    
+//     for (var i = 0; i < arr.length; i++) {
+//       if (arr[i].length > lgth) {
+//         var lgth = arr[i].length;
+//         longest = arr[i];
+//       }
+//     }
+//       return longest
+//     }
+    
+//     var output = getLongestElement(['one', 'twooo', 'three', "holaa"]);
+//     console.log(output); // --> 'twooo'
