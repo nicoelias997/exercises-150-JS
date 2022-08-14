@@ -1,6 +1,10 @@
 function computeSummationToN(n) {
-    // your code here
-}
-
-var output = computeSummationToN(6);
-console.log(output); // --> 21
+    let suma = n;
+          for(let i = 1; i < n; i++){
+        suma += i
+      }
+    return suma
+  }
+  
+  var output = computeSummationToN(7);
+  console.log(output); // --> 28
