@@ -1,9 +1,18 @@
 var obj = {
-    key: [4, 1, 8]
+    key: [4, 1, 8],
+  algo: [1, 2,3]
 };
 
 function getSumOfAllElementsAtProperty(obj, key) {
-    // your code here
+  let suma = 0;
+  for(let propiedades in obj){
+    if(propiedades == key){
+      for(let i = 0; i < obj[key].length; i++){
+           suma += obj[key][i]    
+      }
+    }
+  }
+  return suma
 }
-var output = getSumOfAllElementsAtProperty(obj, 'key');
-console.log(output); // --> 13
+getSumOfAllElementsAtProperty(obj, 'algo'); // --> 6
+getSumOfAllElementsAtProperty(obj, 'key'); // --> 13
